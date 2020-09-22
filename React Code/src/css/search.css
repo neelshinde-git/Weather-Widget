@@ -1,0 +1,87 @@
+.search-container { 
+    background-color: white;
+    display: flex;
+    width: 90%;
+    margin: auto;
+    margin-top: 18px;
+    margin-bottom: 4px;
+    height: 50px;
+    border: 0;
+    border-radius: 7px;
+    box-shadow: 0 0 10px rgba(100,100,100,0.7);
+}
+
+.search-container:hover{
+    border:1px solid rgba(0,150,255,0.8)
+}
+
+.location-icon{
+    height: 100%;
+    padding: 14px;
+}
+
+.search-container input{
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border:0;
+    font-size: 15px;
+    font-style: bold;
+}
+
+.search-icon{
+    height: 100%;
+    padding: 15px;
+}
+
+.search-results{
+    display: block;
+    margin: auto;
+    width: 90%;
+    
+}
+
+.search-results button{
+    display: flex;
+    position: relative;
+    z-index: 9000;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    text-align: left;
+    border: 0;
+    border-radius: 7px;
+    box-shadow: 0 0 10px rgba(100,100,100,0.5);
+    margin-top:2px;
+    margin-bottom: 2px;
+    background-color: white;
+    justify-content: space-between;
+    padding-left: 12px;
+    cursor: pointer;
+}
+
+
+.drop-down-weather{
+    padding: 10px;
+    height: 100%;
+    
+}
+
+.mini-weather-dropdown{
+    display: flex;
+    height: 50px;
+    align-items: center;
+}
+.temp-weather-dropdown{
+    display:flex;
+    flex-flow: column wrap;
+    justify-content: flex-end;
+}
+
+.temp-dropdown{
+    font-weight: bold;
+}
+.weather-dropdown{
+    color: rgb(100,100,100);
+}
+
