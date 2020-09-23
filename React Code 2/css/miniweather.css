@@ -1,0 +1,56 @@
+.miniweather{
+    display: flex;
+    width: 90%;
+    height: 120px;
+    margin: auto;
+    align-items: center;
+}
+
+
+
+.day-button{
+    display: flex;
+    box-sizing: content-box;
+    flex-flow: column nowrap;
+    height: 100%;
+    width: 20%;
+    background-color: white;
+    border:0 ;
+    align-items: center;
+    justify-content: space-around;
+    margin: 4px;
+}
+
+.day-button:hover{
+    border:0; 
+    box-shadow: 0 0 10px rgb(0,150,255)
+
+}
+
+.day-button img{
+    display: block;
+    width: 35px;
+    height: 35px;
+}
+
+.day{
+    font-size: 13px;
+}
+
+.short-weather{
+    color: rgba(100,100,100,0.8);
+}
+
+.second-temp{
+    color: rgba(100,100,100,0.8);
+}
+
+
+@media screen and (min-width:750px){
+    
+    .miniweather{
+        width: 60%;
+    }
+    
+}
+
