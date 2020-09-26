@@ -1,0 +1,111 @@
+.middle-container{
+    margin-top: 10px;
+    display: flex;
+    flex-flow: column nowrap;
+    width: 50%;
+    height: auto;
+    margin: auto;
+    border: 0;
+    border-radius: 7px;
+    box-shadow: 0 0 10px rgba(100,100,100,0.7);
+}
+
+.temperature{
+    display: flex;
+    margin-top: 5px;
+    height: 60px;
+    align-items: center;
+    font-size: 3rem;
+    font-style: bold;
+    font-weight: 650;
+    letter-spacing: 2px;
+}
+.temperature *{
+    margin: 20px;
+}
+.temperature img{
+    padding: 5px;
+    height: 100%;
+    margin: 0;
+}
+
+.graph-container1{
+    display: block;
+    margin: 20px;
+    margin-top: 0;
+    height: auto;
+    
+}
+
+.graph1{
+    font-size: 14px;
+    overflow-x: scroll;
+}
+
+.humidity-container{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.humidity-container span{
+    display: block;
+    width: 50%;
+    background-color: rgba(153, 220, 255, 0.3);
+    padding: 10px;
+    font-size: 0.9rem;
+    
+}
+
+.humidity-container span:first-child{
+    margin-right: 5px;
+}
+.humidity-container span:last-child{
+    margin-left: 5px;
+}
+
+.sunrise-container{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    font-size: 0.9rem;
+}
+
+.sunrise-container span span{
+    color: rgba(100,100,100)
+}
+
+.sunrise-graph{
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width:1000px){
+    
+    .middle-container{
+        width: 70%;
+    }
+    
+}
+
+@media screen and (max-width:750px){
+    
+    .graph1{
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;
+    }
+    
+    .middle-container{
+        width: 75%;
+    }
+    
+}
+
+@media screen and (max-width:650px){
+    
+    .middle-container{
+        width: 95%;
+    }
+    
+}
+

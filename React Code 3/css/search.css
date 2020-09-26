@@ -1,0 +1,144 @@
+.search-container { 
+    background-color: white;
+    display: flex;
+    position: relative;
+    width: 50%;
+    margin: auto;
+    margin-top: 18px;
+    margin-bottom: 4px;
+    height: 56px;
+    border: 0;
+    border-radius: 7px;
+    box-shadow: 0 0 10px rgba(100,100,100,0.7);
+}
+
+.search-container a{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: default;
+    z-index:5;
+    
+}
+
+.search-container:hover{
+    border: 2px solid rgb(0,150,220);
+}
+
+.location-icon{
+    height: 100%;
+    padding: 14px;
+}
+
+.search-container input{
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border:0;
+    font-size: 15px;
+    font-style: bold;
+}
+
+.search-icon{
+    height: 100%;
+    padding: 15px;
+}
+
+.parent-search{
+    display: block;
+    width: 50%;
+    margin: auto;
+    position: relative;
+    transition: all 0.5s ease;
+}
+
+.search-results{
+    position: absolute;
+    display: block;
+    margin: auto;
+    width: 100%;
+    z-index: 5000;
+    transition: all 0.5s ease;
+    
+}
+
+.search-results button{
+    display: flex;
+    width: 100%;
+    height: 56px;
+    align-items: center;
+    text-align: left;
+    border: 0;
+    border-radius: 7px;
+    box-shadow: 0 0 10px rgba(100,100,100,0.5);
+    margin-top:2px;
+    margin-bottom: 2px;
+    background-color: white;
+    justify-content: space-between;
+    padding-left: 12px;
+    cursor: pointer;
+    
+}
+
+
+.drop-down-weather{
+    padding: 10px;
+    height: 100%;
+    
+}
+
+.mini-weather-dropdown{
+    display: flex;
+    height: 50px;
+    align-items: center;
+}
+.temp-weather-dropdown{
+    display:flex;
+    flex-flow: column wrap;
+    justify-content: flex-end;
+}
+
+.temp-dropdown{
+    font-weight: bold;
+}
+.weather-dropdown{
+    color: rgb(100,100,100);
+}
+
+@media screen and (max-width:1000px){
+    
+    .search-container{
+        width: 70%;
+    }
+    .parent-search{
+        width: 70%;
+    }
+    
+}
+
+@media screen and (max-width:750px){
+    
+    .search-container{
+        width: 75%;
+    }
+    .parent-search{
+        width: 75%;
+    }
+    
+}
+
+@media screen and (max-width:650px){
+    
+    .search-container{
+        width: 95%;
+    }
+    .parent-search{
+        width: 95%;
+    }
+    
+}
+
+
+
+
+
